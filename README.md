@@ -185,6 +185,3 @@ plt.show()
 </p>
 
 <hr />
-<p align="center">
-  <sub>Distributed under the MIT License. Built for signal processing engineers and researchers.</sub>
-</p>
