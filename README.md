@@ -8,7 +8,8 @@
     <a href="#mathematical-foundation">Mathematics</a> •
     <a href="#polynomial-table">Polynomial Table</a> •
     <a href="#applications">Applications</a> •
-    <a href="#code-examples">Implementation</a>
+    <a href="#code-examples">Implementation</a> •
+    <a href="#visual-output">Visual Output</a>
   </p>
 </div>
 
@@ -153,9 +154,10 @@ from scipy import signal
 # 1. Filter Specifications
 order = 4
 cutoff_freq = 100.0  # Cutoff frequency in Hz
+cutoff_rad = 2 * np.pi * cutoff_freq  # Convert to rad/s for SciPy analog filter
 
 # 2. Design Analog Butterworth Filter (Low-pass)
-b, a = signal.butter(N=order, Wn=cutoff_freq, btype='low', analog=True)
+b, a = signal.butter(N=order, Wn=cutoff_rad, btype='low', analog=True)
 
 # 3. Compute Frequency Response
 w, h = signal.freqs(b, a, worN=np.logspace(1, 3, 500))
@@ -174,4 +176,15 @@ plt.legend()
 plt.show()
 </code></pre>
 
+<h3 id="visual-output">📈 Visual Output</h3>
+<p>
+  Running the Python script generates the following frequency response visualization, illustrating the maximally flat passband and the characteristic roll-off rate:
+</p>
+<p align="center">
+  <img src="BFFR_plot.png" alt="Butterworth Filter Frequency Response (Maximally Flat)" width="800" />
+</p>
+
 <hr />
+<p align="center">
+  <sub>Distributed under the MIT License. Built for signal processing engineers and researchers.</sub>
+</p>
