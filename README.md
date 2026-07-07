@@ -183,5 +183,4 @@ plt.show()
 <p align="center">
   <img src="BFFR_plot.png" alt="Butterworth Filter Frequency Response (Maximally Flat)" width="800" />
 </p>
-
 <hr />
