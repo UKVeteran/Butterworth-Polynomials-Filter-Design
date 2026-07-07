@@ -181,6 +181,7 @@ plt.show()
   Running the Python script generates the following frequency response visualization, illustrating the maximally flat passband and the characteristic roll-off rate:
 </p>
 <p align="center">
-  <img src="BFFR_plot.png" alt="Butterworth Filter Frequency Response (Maximally Flat)" width="800" />
+  <img src="Butterworth-Polynomials-Filter-Design
+/BFFR_plot.png" alt="Butterworth Filter Frequency Response (Maximally Flat)" width="800" />
 </p>
 <hr />
